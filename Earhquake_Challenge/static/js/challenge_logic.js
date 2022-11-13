@@ -15,7 +15,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 	accessToken: API_KEY
 });
 
-//############################# Deliverable 3: Add more layers ########################################################################
+//Deliverable 3
 let light = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token={accessToken}',{
     attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18, 
@@ -28,7 +28,7 @@ let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{
     maxZoom: 18,
     accessToken: API_KEY
 });
-//############################ End of Deliverable 3 #####################################################################################
+//
 
 
 // Create the map object with center, zoom level and default layer.
@@ -129,7 +129,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   allEarthquakes.addTo(map);
   tectonicPlates.addTo(map);
 
-//############################## DELIVERABLE 2 ##################################################################################
+//Deliverable 2 
 
 // 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week.
 let majorearth = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
